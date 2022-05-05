@@ -1,0 +1,30 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xmi:XMI
+        xmlns:xmi="http://www.omg.org/XMI"
+        xmlns:cas="http:///uima/cas.ecore"
+        xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore"
+        xmlns:type18="http:///org/texttechnologylab/annotation/type.ecore"
+        xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore"
+        xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <type4:DocumentMetaData xmi:id="1" sofa="12" begin="0" end="18143" language="de" documentTitle="126148.txt"
+                            documentId="126148.txt"
+                            documentUri="file:/mnt/BioFID/Harvesting/literature/bhl/text/txt/126148.txt"
+                            collectionId="file:/mnt/BioFID/Harvesting/literature/bhl/text/txt/"
+                            documentBaseUri="file:/mnt/BioFID/Harvesting/literature/bhl/text/txt/"
+                            isLastSegment="false"/>
+    <type6:Sentence xmi:id="19" sofa="12" begin="0" end="42"/>
+    <type6:Sentence xmi:id="31" sofa="12" begin="43" end="88"/>
+    <type18:Taxon xmi:id="232291" sofa="12" begin="8" end="23"
+                  value="http://www.wikidata.org/entity/Q32473, https://www.biofid.de/bio-ontologies%23GBIF_1900039"
+                  metaphor="false" metonym="false" specific="false"/>
+    <type18:Taxon xmi:id="232300" sofa="12" begin="28" end="41"
+                  value="http://www.wikidata.org/entity/Q286622, http://www.wikidata.org/entity/Q50754496, https://www.biofid.de/bio-ontologies%23GBIF_1909334"
+                  metaphor="false" metonym="false" specific="false"/>
+    <type18:Location_Place xmi:id="232305" sofa="12" begin="78" end="87"
+                           value="http://www.wikidata.org/entity/Q1794"
+                           metaphor="false" metonym="false" specific="false"/>
+    <cas:Sofa xmi:id="12" sofaNum="1" sofaID="_InitialView" mimeType="text"
+              sofaString="I found Fagus sylvatica and Taxus baccata. Both flowered on a meadow close to Frankfurt."/>
+    <cas:View sofa="12" members="1 19 31 232291 232300 232305"/>
+</xmi:XMI>
