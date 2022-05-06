@@ -2,7 +2,8 @@ from setuptools import setup
 
 requirements = [
     'dkpro-cassis',
-    'pdfminer.six'
+    'pdfminer.six',
+    'numpy'
 ]
 
 setup(
