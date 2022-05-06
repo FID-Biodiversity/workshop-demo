@@ -41,7 +41,10 @@ def get_combinations(list1: list, list2: list) -> Iterator:
     if list1 is None or not list1:
         raise StopIteration()
 
-    if list2 is None or not list2:
+    if list2 is not None and not list2:
+        raise ValueError('The given comparison list is empty!')
+
+    if list2 is None:
         return combinations(list1, 2)
     else:
         return product(list1, list2)
