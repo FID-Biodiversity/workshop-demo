@@ -3,7 +3,8 @@ __all__ = [
 ]
 
 from dataclasses import dataclass
-from typing import Protocol, List
+from typing import List
+from abc import ABC, abstractmethod
 
 
 @dataclass
@@ -17,25 +18,29 @@ class NamedEntity:
     uris: List[str]
 
 
-class NlpReader(Protocol):
+class NlpReader(ABC):
     """ A common interface for all NLP result files. """
 
     @property
+    @abstractmethod
     def taxa(self) -> List[NamedEntity]:
         """ Returns all annotated taxa in the text. """
         ...
 
     @property
+    @abstractmethod
     def locations(self) -> List[NamedEntity]:
         """ Returns all annotated locations in the text. """
         ...
 
     @property
+    @abstractmethod
     def text(self) -> str:
         """ Returns the plain original text. """
         ...
 
     @property
+    @abstractmethod
     def annotated_text(self) -> str:
         """ Returns an annotated representation of the text. """
         ...

@@ -546,7 +546,7 @@ def normalize_attributes(attributes):
             if new_value:
                 if attribute.name == attribute_name:
                     delete_attribute_after_processing = False
-                new_attributes[attribute.name] = new_value
+                new_attributes[attribute.name] = list(sorted(new_value))
                 found_new_value = True
             separate_container_values_in_enumerated_attributes(new_attributes, attribute.name)
             if found_new_value:
@@ -598,7 +598,7 @@ def get_elements_contain_substring(substring, container, return_container=None):
         if (isinstance(elem, Sequence) or isinstance(elem, set)) and not isinstance(elem, str):
             return_container = get_elements_contain_substring(substring, elem, return_container)
         elif isinstance(elem, str) and re.search(substring, elem):
-            return_container.add(elem)
+            return_container.add(elem.strip())
 
     return return_container
 
