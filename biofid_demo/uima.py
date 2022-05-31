@@ -16,7 +16,7 @@ from collections import defaultdict, OrderedDict
 from collections.abc import Sequence
 from copy import copy
 from copy import deepcopy
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 from functools import partial
 from hashlib import md5
@@ -38,6 +38,7 @@ class UimaNamedEntities(Enum):
     Location = 'org.texttechnologylab.annotation.type.Location_Place'
     Plant = 'org.texttechnologylab.annotation.type.Plant_Flora'
     Animal = 'org.texttechnologylab.annotation.type.Animal_Fauna'
+    GeoNamesEntity = 'org.texttechnologylab.annotation.GeoNamesEntity'
 
     def __str__(self):
         return str(self.value)
@@ -71,7 +72,8 @@ class UimaReader:
     def locations(self) -> List[NamedEntity]:
         """ Returns all annotated locations in the text. """
         return [annotation_to_named_entity_object(location)
-                for location in self.iterate_annotations(UimaNamedEntities.Location)]
+                for location in self.iterate_annotations([UimaNamedEntities.Location,
+                                                          UimaNamedEntities.GeoNamesEntity])]
 
     @property
     def text(self) -> str:
@@ -97,7 +99,12 @@ def annotation_to_named_entity_object(uima_annotation) -> NamedEntity:
     """ Converts a given UIMA annotation to a NamedEntity object. """
     ne_type = uima_annotation.type.name.split('.')[-1].lower()
 
-    uris = uima_annotation.value
+    uris = uima_annotation.value if isinstance(uima_annotation.value, str) else ''
+
+    if uima_annotation.type.name == str(UimaNamedEntities.GeoNamesEntity):
+        uris = generate_geonames_uri_from_id(uima_annotation.id)
+        ne_type = NE_LOCATION_STRING
+
     if uris is not None:
         uris = [unquote(uri.strip()) for uri in uris.split(',')]
 
@@ -172,7 +179,7 @@ ATTRIBUTE_NORMALIZATION = {
 }
 
 TAG_NAME_NORMALIZATION = {
-    'geonamesentity': 'location'
+    'geonamesentity': 'location_place'
 }
 
 NE_CLASS_PRIORITY = ["Plant_Flora", "Animal_Fauna", "Taxon"]
@@ -514,7 +521,7 @@ def normalize_attributes(attributes):
 
     if 'id' in found_attributes:
         geonames_id = found_attributes['id'].pop()
-        found_attributes[URI].append(f'https://sws.geonames.org/{geonames_id}/')
+        found_attributes[URI].append(generate_geonames_uri_from_id(geonames_id))
 
     if VALUE_STRING in found_attributes:
         for n in [VALUE_STRING, 'identifier']:
@@ -834,6 +841,10 @@ def sort_by_priority_and_position(elem: Annotation, current_position: int) -> fl
     priority_modification -= 0.025 if elem.begin == elem.end else 0
 
     return current_position - priority_modification
+
+
+def generate_geonames_uri_from_id(geonames_id) -> str:
+    return f'https://sws.geonames.org/{geonames_id}/'
 
 
 def convert_uima_to_annotated_text(uima_file_path) -> str:

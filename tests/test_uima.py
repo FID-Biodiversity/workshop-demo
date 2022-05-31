@@ -15,12 +15,14 @@ class TestUimaConversion:
                                  'wikidata-1="http://www.wikidata.org/entity/Q50754496">Taxus baccata</em>.</sentence> ' \
                                  '<sentence class="sentence" id="31">Both flowered on a meadow close to <em class' \
                                  '="location_place" id="7982b06819" ' \
-                                 'wikidata="http://www.wikidata.org/entity/Q1794">Frankfurt</em>.'
+                                 'wikidata="http://www.wikidata.org/entity/Q1794">Frankfurt</em> and <em ' \
+                                 'class="location_place" id="07811dc6c4" ' \
+                                 'uri="https://sws.geonames.org/6547483/">Berlin</em>.'
 
     def test_processing_spnhc2022_demo_xmi(self, spnhc2022_demo_xmi_file_path):
         annotated_text = convert_uima_to_annotated_text(spnhc2022_demo_xmi_file_path)
         assert_em_tag_in_text(text_to_check=annotated_text,
-                              class_name='location', arguments={'uri': 'https://sws.geonames.org/3220968/'},
+                              class_name='location_place', arguments={'uri': 'https://sws.geonames.org/3220968/'},
                               annotated_text='Frankfurt')
         assert_em_tag_in_text(text_to_check=annotated_text,
                               class_name='taxon', arguments={'wikidata': 'http://www.wikidata.org/entity/Q5113'},
@@ -43,4 +45,3 @@ def assert_em_tag_in_text(text_to_check: str, class_name: str = None, arguments:
         text_string = relevant_text_match.group()
         for arg in arguments:
             assert arg in text_string
-

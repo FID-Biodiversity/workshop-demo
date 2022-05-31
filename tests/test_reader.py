@@ -15,7 +15,7 @@ class TestUimaReader:
 
     def test_get_text(self, uima_reader):
         assert uima_reader.text == 'I found Fagus sylvatica and Taxus baccata.' \
-                                   ' Both flowered on a meadow close to Frankfurt.'
+                                   ' Both flowered on a meadow close to Frankfurt and Berlin.'
 
     @pytest.fixture
     def uima_reader(self, uima_xml_file_path):
@@ -40,5 +40,8 @@ class TestUimaReader:
         return [
             NamedEntity(begin=78, end=87, id='232305', ne_type='location_place',
                         uris=['http://www.wikidata.org/entity/Q1794'],
-                        text='Frankfurt')
+                        text='Frankfurt'),
+            NamedEntity(begin=92, end=98, id='2024', ne_type='location_place',
+                        uris=['https://sws.geonames.org/6547483/'],
+                        text='Berlin')
         ]

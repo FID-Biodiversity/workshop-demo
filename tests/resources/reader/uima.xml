@@ -5,6 +5,7 @@
         xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore"
         xmlns:type18="http:///org/texttechnologylab/annotation/type.ecore"
         xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore"
+        xmlns:annotation2="http:///org/texttechnologylab/annotation.ecore"
         xmi:version="2.0">
     <cas:NULL xmi:id="0"/>
     <type4:DocumentMetaData xmi:id="1" sofa="12" begin="0" end="18143" language="de" documentTitle="126148.txt"
@@ -14,7 +15,7 @@
                             documentBaseUri="file:/mnt/BioFID/Harvesting/literature/bhl/text/txt/"
                             isLastSegment="false"/>
     <type6:Sentence xmi:id="19" sofa="12" begin="0" end="42"/>
-    <type6:Sentence xmi:id="31" sofa="12" begin="43" end="88"/>
+    <type6:Sentence xmi:id="31" sofa="12" begin="43" end="99"/>
     <type18:Taxon xmi:id="232291" sofa="12" begin="8" end="23"
                   value="http://www.wikidata.org/entity/Q32473, https://www.biofid.de/bio-ontologies%23GBIF_1900039"
                   metaphor="false" metonym="false" specific="false"/>
@@ -24,7 +25,9 @@
     <type18:Location_Place xmi:id="232305" sofa="12" begin="78" end="87"
                            value="http://www.wikidata.org/entity/Q1794"
                            metaphor="false" metonym="false" specific="false"/>
+    <annotation2:GeoNamesEntity begin="92" end="98" id="6547483" mainclass="A" sofa="12" subclass="ADM4" xmi:id="2024"/>
+
     <cas:Sofa xmi:id="12" sofaNum="1" sofaID="_InitialView" mimeType="text"
-              sofaString="I found Fagus sylvatica and Taxus baccata. Both flowered on a meadow close to Frankfurt."/>
-    <cas:View sofa="12" members="1 19 31 232291 232300 232305"/>
+              sofaString="I found Fagus sylvatica and Taxus baccata. Both flowered on a meadow close to Frankfurt and Berlin."/>
+    <cas:View sofa="12" members="1 19 31 2024 232291 232300 232305"/>
 </xmi:XMI>
