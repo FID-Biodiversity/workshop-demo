@@ -1,0 +1,132 @@
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:IsoSpatial="http:///org/texttechnologylab/annotation/semaf/IsoSpatial.ecore" xmlns:Room="http:///org/texttechnologylab/annotation/Room.ecore" xmlns:administration="http:///org/texttechnologylab/annotation/administration.ecore" xmlns:annotation="http:///org/hucompute/wikidragon/core/nlp/annotation.ecore" xmlns:annotation2="http:///org/texttechnologylab/annotation.ecore" xmlns:cas="http:///uima/cas.ecore" xmlns:category="http:///org/hucompute/textimager/uima/type/category.ecore" xmlns:chunk="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/chunk.ecore" xmlns:concept="http:///org/texttechnologylab/annotation/type/concept.ecore" xmlns:constituent="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/constituent.ecore" xmlns:dependency="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/dependency.ecore" xmlns:ged="http:///org/bitbucket/rkilinger/ged.ecore" xmlns:heideltime="http:///de/unihd/dbs/uima/types/heideltime.ecore" xmlns:iaa="http:///org/texttechnologylab/iaa.ecore" xmlns:isobase="http:///org/texttechnologylab/annotation/semaf/isobase.ecore" xmlns:isospace="http:///org/texttechnologylab/annotation/semaf/isospace.ecore" xmlns:isotimeml="http:///org/texttechnologylab/annotation/semaf/isotimeml.ecore" xmlns:knowledge="http:///org/texttechnologylab/annotation/knowledge.ecore" xmlns:meta="http:///org/texttechnologylab/annotation/semaf/meta.ecore" xmlns:morph="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/morph.ecore" xmlns:ocr="http:///org/texttechnologylab/annotation/ocr.ecore" xmlns:pos="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos.ecore" xmlns:schema="http:///org/texttechnologylab/annotation/schema.ecore" xmlns:score="http:///org/texttechnologylab/annotation/score.ecore" xmlns:segmentation="http:///org/hucompute/textimager/uima/type/segmentation.ecore" xmlns:semafsr="http:///org/texttechnologylab/annotation/semaf/semafsr.ecore" xmlns:semantics="http:///org/hucompute/textimager/uima/type/semantics.ecore" xmlns:sentence="http:///org/texttechnologylab/annotation/sentence.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:time="http:///org/texttechnologylab/annotation/semaf/isotimeml/time.ecore" xmlns:token="http:///org/texttechnologylab/annotation/token.ecore" xmlns:tweet="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos/tweet.ecore" xmlns:twitter="http:///org/texttechnologylab/annotation/twitter.ecore" xmlns:type="http:///de/tudarmstadt/ukp/dkpro/core/api/anomaly/type.ecore" xmlns:type10="http:///de/tudarmstadt/ukp/dkpro/core/api/transform/type.ecore" xmlns:type11="http:///de/tudarmstadt/ukp/dkpro/core/io/jwpl/type.ecore" xmlns:type12="http:///embeddingAnnotation/type.ecore" xmlns:type13="http:///morphemeAnnotation/type.ecore" xmlns:type14="http:///org/dkpro/core/api/xml/type.ecore" xmlns:type15="http:///org/dkpro/similarity/uima/api/type.ecore" xmlns:type16="http:///org/dkpro/similarity/uima/entailment/type.ecore" xmlns:type17="http:///org/hucompute/services/type.ecore" xmlns:type18="http:///org/hucompute/textimager/uima/type.ecore" xmlns:type19="http:///org/texttechnologylab/annotation/type.ecore" xmlns:type2="http:///de/tudarmstadt/ukp/dkpro/core/api/coref/type.ecore" xmlns:type20="http:///sentimentAnnotation/type.ecore" xmlns:type21="http:///tansliterationAnnotation/type.ecore" xmlns:type22="http:///org/texttechnologylab/annotation/node/type.ecore" xmlns:type23="http:///org/texttechnologylab/annotation/attribution/type.ecore" xmlns:type24="http:///org/texttechnologylab/annotation/context/type.ecore" xmlns:type25="http:///org/texttechnologylab/annotation/orientation/type.ecore" xmlns:type26="http:///org/texttechnologylab/annotation/temporal/type.ecore" xmlns:type3="http:///de/tudarmstadt/ukp/dkpro/core/api/frequency/tfidf/type.ecore" xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:type5="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:type7="http:///de/tudarmstadt/ukp/dkpro/core/api/semantics/type.ecore" xmlns:type8="http:///de/tudarmstadt/ukp/dkpro/core/api/structure/type.ecore" xmlns:type9="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type.ecore" xmlns:typo="http:///org/texttechnologylab/annotation/typo.ecore" xmlns:wikidata="http:///org/hucompute/textimager/uima/type/wikidata.ecore" xmlns:wikidata2="http:///org/texttechnologylab/annotation/type/wikidata.ecore" xmlns:wikipedia="http:///org/hucompute/textimager/uima/type/wikipedia.ecore" xmi:version="2.0">
+
+    <cas:NULL xmi:id="0"/>
+    <tcas:DocumentAnnotation begin="0" end="117" language="en" sofa="1" xmi:id="8"/>
+    <type6:Sentence begin="0" end="35" sofa="1" xmi:id="13"/>
+    <type6:Sentence begin="36" end="84" sofa="1" xmi:id="25"/>
+    <type6:Sentence begin="85" end="116" sofa="1" xmi:id="37"/>
+    <type6:Sentence begin="116" end="117" sofa="1" xmi:id="49"/>
+    <type6:Token begin="0" end="3" lemma="754" morph="1006" order="0" pos="481" sofa="1" xmi:id="61"/>
+    <type6:Token begin="4" end="15" lemma="766" morph="1036" order="0" pos="494" sofa="1" xmi:id="81"/>
+    <type6:Token begin="16" end="21" lemma="778" morph="1066" order="0" pos="507" sofa="1" xmi:id="101"/>
+    <type6:Token begin="22" end="24" lemma="790" order="0" pos="520" sofa="1" xmi:id="121"/>
+    <type6:Token begin="25" end="34" lemma="802" morph="1119" order="0" pos="533" sofa="1" xmi:id="141"/>
+    <type6:Token begin="34" end="35" lemma="814" morph="1149" order="0" pos="546" sofa="1" xmi:id="161"/>
+    <type6:Token begin="36" end="39" lemma="826" morph="1179" order="0" pos="559" sofa="1" xmi:id="181"/>
+    <type6:Token begin="40" end="45" lemma="838" morph="1209" order="0" pos="572" sofa="1" xmi:id="201"/>
+    <type6:Token begin="46" end="49" lemma="850" morph="1239" order="0" pos="585" sofa="1" xmi:id="221"/>
+    <type6:Token begin="50" end="55" lemma="862" morph="1269" order="0" pos="598" sofa="1" xmi:id="241"/>
+    <type6:Token begin="56" end="61" lemma="874" morph="1299" order="0" pos="611" sofa="1" xmi:id="261"/>
+    <type6:Token begin="62" end="64" lemma="886" order="0" pos="624" sofa="1" xmi:id="281"/>
+    <type6:Token begin="65" end="68" lemma="898" morph="1352" order="0" pos="637" sofa="1" xmi:id="301"/>
+    <type6:Token begin="69" end="79" lemma="910" morph="1382" order="0" pos="650" sofa="1" xmi:id="321"/>
+    <type6:Token begin="80" end="83" lemma="922" morph="1412" order="0" pos="663" sofa="1" xmi:id="341"/>
+    <type6:Token begin="83" end="84" lemma="934" morph="1442" order="0" pos="676" sofa="1" xmi:id="361"/>
+    <type6:Token begin="85" end="90" lemma="946" morph="1472" order="0" pos="689" sofa="1" xmi:id="381"/>
+    <type6:Token begin="91" end="100" lemma="958" morph="1502" order="0" pos="702" sofa="1" xmi:id="401"/>
+    <type6:Token begin="101" end="109" lemma="970" morph="1532" order="0" pos="715" sofa="1" xmi:id="421"/>
+    <type6:Token begin="110" end="115" lemma="982" morph="1562" order="0" pos="728" sofa="1" xmi:id="441"/>
+    <type6:Token begin="115" end="116" lemma="994" morph="1592" order="0" pos="741" sofa="1" xmi:id="461"/>
+    <pos:POS_VERB PosValue="VB" begin="0" coarseValue="VERB" end="3" sofa="1" xmi:id="481"/>
+    <pos:POS_VERB PosValue="VB" begin="36" coarseValue="VERB" end="39" sofa="1" xmi:id="559"/>
+    <pos:POS_VERB PosValue="VBZ" begin="50" coarseValue="VERB" end="55" sofa="1" xmi:id="598"/>
+    <pos:POS_VERB PosValue="VB" begin="85" coarseValue="VERB" end="90" sofa="1" xmi:id="689"/>
+    <pos:POS_ADJ PosValue="JJ" begin="4" coarseValue="ADJ" end="15" sofa="1" xmi:id="494"/>
+    <pos:POS_PROPN PosValue="NNP" begin="16" coarseValue="PROPN" end="21" sofa="1" xmi:id="507"/>
+    <pos:POS_PROPN PosValue="NNP" begin="25" coarseValue="PROPN" end="34" sofa="1" xmi:id="533"/>
+    <pos:POS_PROPN PosValue="NNP" begin="40" coarseValue="PROPN" end="45" sofa="1" xmi:id="572"/>
+    <pos:POS_PROPN PosValue="NNP" begin="65" coarseValue="PROPN" end="68" sofa="1" xmi:id="637"/>
+    <pos:POS_PROPN PosValue="NNP" begin="69" coarseValue="PROPN" end="79" sofa="1" xmi:id="650"/>
+    <pos:POS_PROPN PosValue="NNP" begin="91" coarseValue="PROPN" end="100" sofa="1" xmi:id="702"/>
+    <pos:POS_ADP PosValue="IN" begin="22" coarseValue="ADP" end="24" sofa="1" xmi:id="520"/>
+    <pos:POS_ADP PosValue="IN" begin="62" coarseValue="ADP" end="64" sofa="1" xmi:id="624"/>
+    <pos:POS_PUNCT PosValue="." begin="34" coarseValue="PUNCT" end="35" sofa="1" xmi:id="546"/>
+    <pos:POS_PUNCT PosValue="." begin="83" coarseValue="PUNCT" end="84" sofa="1" xmi:id="676"/>
+    <pos:POS_PUNCT PosValue="." begin="115" coarseValue="PUNCT" end="116" sofa="1" xmi:id="741"/>
+    <pos:POS_NOUN PosValue="NN" begin="46" coarseValue="NOUN" end="49" sofa="1" xmi:id="585"/>
+    <pos:POS_NOUN PosValue="NN" begin="56" coarseValue="NOUN" end="61" sofa="1" xmi:id="611"/>
+    <pos:POS_NOUN PosValue="NN" begin="80" coarseValue="NOUN" end="83" sofa="1" xmi:id="663"/>
+    <pos:POS_NOUN PosValue="NN" begin="101" coarseValue="NOUN" end="109" sofa="1" xmi:id="715"/>
+    <pos:POS_NOUN PosValue="NN" begin="110" coarseValue="NOUN" end="115" sofa="1" xmi:id="728"/>
+    <type6:Lemma begin="0" end="3" sofa="1" value="ich" xmi:id="754"/>
+    <type6:Lemma begin="4" end="15" sofa="1" value="beobachtete" xmi:id="766"/>
+    <type6:Lemma begin="16" end="21" sofa="1" value="Vögel" xmi:id="778"/>
+    <type6:Lemma begin="22" end="24" sofa="1" value="in" xmi:id="790"/>
+    <type6:Lemma begin="25" end="34" sofa="1" value="Frankfurt" xmi:id="802"/>
+    <type6:Lemma begin="34" end="35" sofa="1" value="." xmi:id="814"/>
+    <type6:Lemma begin="36" end="39" sofa="1" value="die" xmi:id="826"/>
+    <type6:Lemma begin="40" end="45" sofa="1" value="Amsel" xmi:id="838"/>
+    <type6:Lemma begin="46" end="49" sofa="1" value="kam" xmi:id="850"/>
+    <type6:Lemma begin="50" end="55" sofa="1" value="dabei" xmi:id="862"/>
+    <type6:Lemma begin="56" end="61" sofa="1" value="nicht" xmi:id="874"/>
+    <type6:Lemma begin="62" end="64" sofa="1" value="in" xmi:id="886"/>
+    <type6:Lemma begin="65" end="68" sofa="1" value="der" xmi:id="898"/>
+    <type6:Lemma begin="69" end="79" sofa="1" value="Innenstadt" xmi:id="910"/>
+    <type6:Lemma begin="80" end="83" sofa="1" value="vor" xmi:id="922"/>
+    <type6:Lemma begin="83" end="84" sofa="1" value="." xmi:id="934"/>
+    <type6:Lemma begin="85" end="90" sofa="1" value="fagus" xmi:id="946"/>
+    <type6:Lemma begin="91" end="100" sofa="1" value="sylvatica" xmi:id="958"/>
+    <type6:Lemma begin="101" end="109" sofa="1" value="hingegen" xmi:id="970"/>
+    <type6:Lemma begin="110" end="115" sofa="1" value="schon" xmi:id="982"/>
+    <type6:Lemma begin="115" end="116" sofa="1" value="." xmi:id="994"/>
+    <morph:MorphologicalFeatures begin="0" end="3" sofa="1" value="VerbForm=Inf" verbForm="Inf" xmi:id="1006"/>
+    <morph:MorphologicalFeatures begin="4" degree="Pos" end="15" sofa="1" value="Degree=Pos" xmi:id="1036"/>
+    <morph:MorphologicalFeatures begin="16" end="21" number="Sing" sofa="1" value="NounType=Prop|Number=Sing" xmi:id="1066"/>
+    <morph:MorphologicalFeatures begin="25" end="34" number="Sing" sofa="1" value="NounType=Prop|Number=Sing" xmi:id="1119"/>
+    <morph:MorphologicalFeatures begin="34" end="35" sofa="1" value="PunctType=Peri" xmi:id="1149"/>
+    <morph:MorphologicalFeatures begin="36" end="39" sofa="1" value="VerbForm=Inf" verbForm="Inf" xmi:id="1179"/>
+    <morph:MorphologicalFeatures begin="40" end="45" number="Sing" sofa="1" value="NounType=Prop|Number=Sing" xmi:id="1209"/>
+    <morph:MorphologicalFeatures begin="46" end="49" number="Sing" sofa="1" value="Number=Sing" xmi:id="1239"/>
+    <morph:MorphologicalFeatures begin="50" end="55" number="Sing" person="Three" sofa="1" tense="Pres" value="Number=Sing|Person=Three|Tense=Pres|VerbForm=Fin" verbForm="Fin" xmi:id="1269"/>
+    <morph:MorphologicalFeatures begin="56" end="61" number="Sing" sofa="1" value="Number=Sing" xmi:id="1299"/>
+    <morph:MorphologicalFeatures begin="65" end="68" number="Sing" sofa="1" value="NounType=Prop|Number=Sing" xmi:id="1352"/>
+    <morph:MorphologicalFeatures begin="69" end="79" number="Sing" sofa="1" value="NounType=Prop|Number=Sing" xmi:id="1382"/>
+    <morph:MorphologicalFeatures begin="80" end="83" number="Sing" sofa="1" value="Number=Sing" xmi:id="1412"/>
+    <morph:MorphologicalFeatures begin="83" end="84" sofa="1" value="PunctType=Peri" xmi:id="1442"/>
+    <morph:MorphologicalFeatures begin="85" end="90" sofa="1" value="VerbForm=Inf" verbForm="Inf" xmi:id="1472"/>
+    <morph:MorphologicalFeatures begin="91" end="100" number="Sing" sofa="1" value="NounType=Prop|Number=Sing" xmi:id="1502"/>
+    <morph:MorphologicalFeatures begin="101" end="109" number="Sing" sofa="1" value="Number=Sing" xmi:id="1532"/>
+    <morph:MorphologicalFeatures begin="110" end="115" number="Sing" sofa="1" value="Number=Sing" xmi:id="1562"/>
+    <morph:MorphologicalFeatures begin="115" end="116" sofa="1" value="PunctType=Peri" xmi:id="1592"/>
+    <dependency:ROOT DependencyType="--" Dependent="61" Governor="61" begin="0" end="3" flavor="basic" sofa="1" xmi:id="1622"/>
+    <dependency:ROOT DependencyType="--" Dependent="181" Governor="181" begin="36" end="39" flavor="basic" sofa="1" xmi:id="1712"/>
+    <dependency:ROOT DependencyType="--" Dependent="441" Governor="441" begin="110" end="115" flavor="basic" sofa="1" xmi:id="1907"/>
+    <dependency:Dependency DependencyType="AMOD" Dependent="81" Governor="101" begin="4" end="15" flavor="basic" sofa="1" xmi:id="1637"/>
+    <dependency:Dependency DependencyType="DOBJ" Dependent="101" Governor="61" begin="16" end="21" flavor="basic" sofa="1" xmi:id="1652"/>
+    <dependency:Dependency DependencyType="PREP" Dependent="121" Governor="101" begin="22" end="24" flavor="basic" sofa="1" xmi:id="1667"/>
+    <dependency:Dependency DependencyType="POBJ" Dependent="141" Governor="121" begin="25" end="34" flavor="basic" sofa="1" xmi:id="1682"/>
+    <dependency:Dependency DependencyType="PUNCT" Dependent="161" Governor="61" begin="34" end="35" flavor="basic" sofa="1" xmi:id="1697"/>
+    <dependency:Dependency DependencyType="COMPOUND" Dependent="201" Governor="221" begin="40" end="45" flavor="basic" sofa="1" xmi:id="1727"/>
+    <dependency:Dependency DependencyType="NPADVMOD" Dependent="221" Governor="181" begin="46" end="49" flavor="basic" sofa="1" xmi:id="1742"/>
+    <dependency:Dependency DependencyType="CCOMP" Dependent="241" Governor="181" begin="50" end="55" flavor="basic" sofa="1" xmi:id="1757"/>
+    <dependency:Dependency DependencyType="DOBJ" Dependent="261" Governor="241" begin="56" end="61" flavor="basic" sofa="1" xmi:id="1772"/>
+    <dependency:Dependency DependencyType="PREP" Dependent="281" Governor="241" begin="62" end="64" flavor="basic" sofa="1" xmi:id="1787"/>
+    <dependency:Dependency DependencyType="COMPOUND" Dependent="301" Governor="341" begin="65" end="68" flavor="basic" sofa="1" xmi:id="1802"/>
+    <dependency:Dependency DependencyType="COMPOUND" Dependent="321" Governor="341" begin="69" end="79" flavor="basic" sofa="1" xmi:id="1817"/>
+    <dependency:Dependency DependencyType="POBJ" Dependent="341" Governor="281" begin="80" end="83" flavor="basic" sofa="1" xmi:id="1832"/>
+    <dependency:Dependency DependencyType="PUNCT" Dependent="361" Governor="181" begin="83" end="84" flavor="basic" sofa="1" xmi:id="1847"/>
+    <dependency:Dependency DependencyType="COMPOUND" Dependent="381" Governor="401" begin="85" end="90" flavor="basic" sofa="1" xmi:id="1862"/>
+    <dependency:Dependency DependencyType="COMPOUND" Dependent="401" Governor="441" begin="91" end="100" flavor="basic" sofa="1" xmi:id="1877"/>
+    <dependency:Dependency DependencyType="COMPOUND" Dependent="421" Governor="441" begin="101" end="109" flavor="basic" sofa="1" xmi:id="1892"/>
+    <dependency:Dependency DependencyType="PUNCT" Dependent="461" Governor="441" begin="115" end="116" flavor="basic" sofa="1" xmi:id="1922"/>
+    <type5:NamedEntity begin="16" end="21" sofa="1" value="ORG" xmi:id="1937"/>
+    <type5:NamedEntity begin="25" end="34" sofa="1" value="GPE" xmi:id="1950"/>
+    <type19:Taxon begin="16" end="21" metaphor="false" metonym="false" sofa="1" specific="false" value="http://www.wikidata.org/entity/Q5113" xmi:id="1963"/>
+    <type19:Taxon begin="40" end="45" metaphor="false" metonym="false" sofa="1" specific="false" value="http://www.wikidata.org/entity/Q25234" xmi:id="1972"/>
+    <type19:Taxon begin="85" end="100" identifier="https://www.catalogueoflife.org/data/taxon/3DSK5" metaphor="false" metonym="false" sofa="1" specific="false" value="Fagus sylvatica L." xmi:id="2041"/>
+    <type19:Taxon begin="91" end="100" metaphor="false" metonym="false" sofa="1" specific="false" value="https://www.biofid.de/bio-ontologies/Tracheophyta%23GBIF_9512938" xmi:id="1981"/>
+    <annotation2:GeoNamesEntity begin="25" end="34" id="3220968" mainclass="A" sofa="1" subclass="ADM3" xmi:id="1990"/>
+    <annotation2:GeoNamesEntity begin="40" end="45" id="3063568" mainclass="H" sofa="1" subclass="STM" xmi:id="2007"/>
+    <annotation2:GeoNamesEntity begin="46" end="49" id="6547483" mainclass="A" sofa="1" subclass="ADM4" xmi:id="2024"/>
+    <annotation2:AnnotationComment key="ttlab_annotator" reference="1990" sofa="1" value="ttlab_geonamesl_v_1.0.1" xmi:id="1997"/>
+    <annotation2:AnnotationComment key="ttlab_model" reference="1990" sofa="1" value="ttlab_geonames_v_1.0.1" xmi:id="2002"/>
+    <annotation2:AnnotationComment key="ttlab_annotator" reference="2007" sofa="1" value="ttlab_geonamesl_v_1.0.1" xmi:id="2014"/>
+    <annotation2:AnnotationComment key="ttlab_model" reference="2007" sofa="1" value="ttlab_geonames_v_1.0.1" xmi:id="2019"/>
+    <annotation2:AnnotationComment key="ttlab_annotator" reference="2024" sofa="1" value="ttlab_geonamesl_v_1.0.1" xmi:id="2031"/>
+    <annotation2:AnnotationComment key="ttlab_model" reference="2024" sofa="1" value="ttlab_geonames_v_1.0.1" xmi:id="2036"/>
+    <annotation2:AnnotationComment key="gnfinder_verification" reference="2041" sofa="1" value="{&quot;currentCanonicalSimple&quot;:&quot;Fagus sylvatica&quot;,&quot;entryDate&quot;:&quot;2021-11-20&quot;,&quot;editDistance&quot;:0,&quot;matchType&quot;:&quot;Exact&quot;,&quot;classificationRanks&quot;:&quot;unranked|kingdom|phylum|class|order|family|genus|species&quot;,&quot;scoreDetails&quot;:{&quot;fuzzyLessScore&quot;:1,&quot;parsingQualityScore&quot;:1,&quot;acceptedNameScore&quot;:1,&quot;authorMatchScore&quot;:0.14285715,&quot;curatedDataScore&quot;:1,&quot;infraSpecificRankScore&quot;:0},&quot;matchedCanonicalFull&quot;:&quot;Fagus sylvatica&quot;,&quot;currentCanonicalFull&quot;:&quot;Fagus sylvatica&quot;,&quot;stemEditDistance&quot;:0,&quot;currentRecordId&quot;:&quot;3DSK5&quot;,&quot;isSynonym&quot;:false,&quot;classificationPath&quot;:&quot;Biota|Plantae|Tracheophyta|Magnoliopsida|Fagales|Fagaceae|Fagus|Fagus sylvatica&quot;,&quot;sortScore&quot;:9.424663528163515,&quot;matchedCardinality&quot;:2,&quot;recordId&quot;:&quot;3DSK5&quot;,&quot;dataSourceId&quot;:1,&quot;matchedCanonicalSimple&quot;:&quot;Fagus sylvatica&quot;,&quot;dataSourceTitleShort&quot;:&quot;Catalogue of Life&quot;,&quot;curation&quot;:&quot;Curated&quot;,&quot;currentName&quot;:&quot;Fagus sylvatica L.&quot;,&quot;outlink&quot;:&quot;https://www.catalogueoflife.org/data/taxon/3DSK5&quot;,&quot;currentCardinality&quot;:2,&quot;classificationIds&quot;:&quot;5T6MX|P|TP|MG|384|623R7|4J87|3DSK5&quot;,&quot;matchedName&quot;:&quot;Fagus sylvatica L.&quot;}" xmi:id="2050"/>
+    <cas:Sofa mimeType="text" sofaID="_InitialView" sofaNum="1" sofaString="Ich beobachtete Vögel in Frankfurt. Die Amsel kam dabei nicht in der Innenstadt vor. Fagus sylvatica hingegen schon.
+    " xmi:id="1"/>
+    <cas:View members="8 13 25 37 49 61 81 101 121 141 161 181 201 221 241 261 281 301 321 341 361 381 401 421 441 461 481 559 598 689 494 507 533 572 637 650 702 520 624 546 676 741 585 611 663 715 728 754 766 778 790 802 814 826 838 850 862 874 886 898 910 922 934 946 958 970 982 994 1006 1036 1066 1119 1149 1179 1209 1239 1269 1299 1352 1382 1412 1442 1472 1502 1532 1562 1592 1622 1712 1907 1637 1652 1667 1682 1697 1727 1742 1757 1772 1787 1802 1817 1832 1847 1862 1877 1892 1922 1937 1950 1963 1972 2041 1981 1990 2007 2024 1997 2002 2014 2019 2031 2036 2050" sofa="1"/>
+
+</xmi:XMI>

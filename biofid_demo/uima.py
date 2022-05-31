@@ -171,6 +171,10 @@ ATTRIBUTE_NORMALIZATION = {
     'identifier': 'biofid-uri'
 }
 
+TAG_NAME_NORMALIZATION = {
+    'geonamesentity': 'location'
+}
+
 NE_CLASS_PRIORITY = ["Plant_Flora", "Animal_Fauna", "Taxon"]
 
 FLAIR_STRING = 'Flair'
@@ -386,9 +390,15 @@ def generate_opening_tag_prefix(annotation: etree.Element) -> str:
     tag = f'<{annotation.name}' if annotation.name in ANNOTATION_IS_TAG_NAME else f'<em'
 
     if CLASS_STRING not in annotation.attributes:
-        tag = f'{tag} class ="{annotation.name}"'
+        normalized_class = convert_tag_to_class(annotation.name)
+        tag = f'{tag} class="{normalized_class}"'
 
     return tag
+
+
+def convert_tag_to_class(class_name: str) -> str:
+    normalized_class_name = TAG_NAME_NORMALIZATION.get(class_name)
+    return normalized_class_name if normalized_class_name is not None else class_name
 
 
 def start_tag(annotation: etree.Element) -> str:

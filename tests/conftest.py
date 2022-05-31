@@ -16,3 +16,8 @@ def test_resource_directory(test_directory):
 @pytest.fixture
 def uima_xml_file_path(test_resource_directory):
     return test_resource_directory / 'reader/uima.xml'
+
+
+@pytest.fixture
+def spnhc2022_demo_xmi_file_path(test_resource_directory):
+    return test_resource_directory / 'reader/spnhc2022-demo.xmi'
