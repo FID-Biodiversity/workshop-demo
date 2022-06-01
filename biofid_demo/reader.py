@@ -17,6 +17,9 @@ class NamedEntity:
     text: str
     uris: List[str]
 
+    def __hash__(self):
+        return hash((self.begin, self.end, self.id))
+
 
 class NlpReader(ABC):
     """ A common interface for all NLP result files. """

@@ -8,11 +8,15 @@ import numpy as np
 from biofid_demo.reader import NamedEntity
 
 
-@dataclass(frozen=True)
+@dataclass
 class ProximityResult:
     """ Holds two NamedEntity objects and a value to express their proximity. """
     annotations: List[NamedEntity]
     proximity_rate: float
+
+    def __hash__(self):
+        sorted_frozen_annotations = tuple(sorted(self.annotations, key=lambda ann: ann.begin))
+        return hash(sorted_frozen_annotations)
 
 
 class ProximityReasoner:

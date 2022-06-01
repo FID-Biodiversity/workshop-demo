@@ -33,6 +33,10 @@ class TestProximityReasoner:
         expected_proximity = 0.91
         assert_annotation_proximity(evaluation_result[3], expected_annotations, expected_proximity)
 
+    def test_converte_evaulation_list_to_set(self, proximity_reasoner, taxa_annotations, location_annotations):
+        evaluation_result = proximity_reasoner.evaluate(taxa_annotations, location_annotations)
+        assert isinstance(set(evaluation_result), set)
+
     @pytest.fixture
     def proximity_reasoner(self):
         return ProximityReasoner()
