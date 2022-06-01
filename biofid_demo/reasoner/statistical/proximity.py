@@ -8,7 +8,7 @@ import numpy as np
 from biofid_demo.reader import NamedEntity
 
 
-@dataclass
+@dataclass(frozen=True)
 class ProximityResult:
     """ Holds two NamedEntity objects and a value to express their proximity. """
     annotations: List[NamedEntity]
